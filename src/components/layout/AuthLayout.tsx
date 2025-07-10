@@ -1,6 +1,5 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { BookOpen } from 'lucide-react';
 
 const AuthLayout: React.FC = () => {
   return (
@@ -9,7 +8,7 @@ const AuthLayout: React.FC = () => {
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-blue-500 to-blue-700 p-12 flex-col justify-between text-white">
         <div>
           <div className="flex items-center space-x-3">
-            <BookOpen size={36} className="text-white" />
+            <img src="/YWAM-Logo.png" alt="YWAM" className="w-12 h-12" />
             <h1 className="text-3xl font-bold">YWAM DAR</h1>
           </div>
           <p className="mt-6 text-blue-100 text-lg max-w-lg">

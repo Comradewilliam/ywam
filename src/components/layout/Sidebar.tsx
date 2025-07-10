@@ -94,7 +94,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMobile, isOpen, onClose }) => {
         {/* Logo and mobile close button */}
         <div className="flex items-center justify-between px-4 mb-6">
           <div className="flex items-center">
-            <img src="/YWAM-Logo.png" alt="YWAM" className="w-8 h-8 mr-2" />
+            <img src="/YWAM-Logo.png" alt="YWAM" className="w-10 h-10 mr-3" />
             <h1 className="text-xl font-bold text-blue-600">YWAM DAR</h1>
           </div>
           {isMobile && (

@@ -1,8 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { MessageState, Message } from '../../types';
-import { mockInitialState } from '../initialState';
+import { realDataService } from '../../services/realDataService';
 
-const initialState: MessageState = mockInitialState.messages;
+const initialState: MessageState = {
+  messages: realDataService.getMessages(),
+  isLoading: false,
+  error: null,
+};
 
 const messagesSlice = createSlice({
   name: 'messages',

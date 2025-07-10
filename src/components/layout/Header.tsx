@@ -26,6 +26,7 @@ const Header: React.FC<HeaderProps> = ({
           >
             <Menu size={20} />
           </button>
+          <img src="/YWAM-Logo.png" alt="YWAM" className="w-8 h-8 mr-3 md:hidden" />
           <h1 className="text-xl font-semibold text-gray-900">{title}</h1>
         </div>
         

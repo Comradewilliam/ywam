@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import Input from '../../components/ui/Input';
 import Button from '../../components/ui/Button';
 import { motion } from 'framer-motion';
-import { BookOpen } from 'lucide-react';
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -83,7 +82,7 @@ const Login: React.FC = () => {
       variants={fadeIn}
     >
       <div className="flex items-center justify-center mb-8">
-        <BookOpen size={36} className="text-blue-600" />
+        <img src="/YWAM-Logo.png" alt="YWAM" className="w-12 h-12 mr-2" />
         <h2 className="text-3xl font-bold text-blue-600 ml-2">YWAM DAR</h2>
       </div>
       

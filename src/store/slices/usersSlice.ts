@@ -1,8 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { UserState, User } from '../../types';
-import { mockInitialState } from '../initialState';
+import { realDataService } from '../../services/realDataService';
 
-const initialState: UserState = mockInitialState.users;
+const initialState: UserState = {
+  users: realDataService.getUsers(),
+  isLoading: false,
+  error: null,
+};
 
 const usersSlice = createSlice({
   name: 'users',

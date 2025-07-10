@@ -291,6 +291,10 @@ export class SupabaseService {
 
   // Messages
   async getMessages(): Promise<Message[]> {
+    if (this.isDemoMode()) {
+      return realDataService.getMessages();
+    }
+
     const { data, error } = await supabase
       .from('messages')
       .select('*')
